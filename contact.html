@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AMUSEMENT PARK</title>
+    <!-- LINKS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- LINKS JAVA -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Amusement Park</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Enterterment.html">Entertainment</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Resturent.html">Restaurant</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tickets.html">Tickets</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact </a></li>
+      </ul>
+
+      <div class="divlog">
+      <button class="btn btn-outline-light ms-2" onclick="openSignInModal()">Sign In</button>
+      <br>
+        <button class="btn btn-outline-light" onclick="openLoginModal()">Login</button>
+        </div>
+    </div>
+  </div>
+</nav>
+    <div class="divcon">
+  <div class="contact-container">
+    <div class="roller-coaster">🎢</div>
+    <h1>Contact Me</h1>
+    <p>Have a question, idea, or just want to chat while waiting for the next ride? Let’s talk!</p>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+   <h2 style="text-align:center;">Amusement Park - Coney Island, NY</h2>
+   <br>
+   <br>
+
+    <!-- Google Map Embed -->
+    <iframe
+      id="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.888721335242!2d-73.98006468459348!3d40.57492627934995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2446f90d09907%3A0x58fd4d40a15fa0a5!2sLuna%20Park!5e0!3m2!1sen!2sus!4v1683752931794!5m2!1sen!2sus"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+     <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signInLabel">Sign up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Please fill in this form to create an account.</p>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Full Name*</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email*</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password*</label>
+            <input type="password" class="form-control" placeholder="Enter password">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Repeat Password*</label>
+            <input type="password" class="form-control" placeholder="Repeat Password">
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+          </div>
+
+          <p class="text-sm text-muted">By creating an account you agree to our 
+            <a href="#" class="text-primary text-decoration-none">Terms & Privacy</a>.
+          </p>
+
+          <button type="submit" class="btn btn-primary-gradient w-100 bg-primary">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title mx-auto" id="loginModalLabel">Sign in</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body px-4">
+        <form>
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="Enter email">
+          </div>
+
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input type="password" class="form-control" placeholder="Enter password">
+          </div>
+
+          <div class="text-end mb-3">
+            <a href="#" class="text-decoration-none">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-gradient w-100 mb-3">
+            <i class="fas fa-sign-in-alt me-2"></i>Login
+          </button>
+
+          <p class="text-center text-muted">or sign in with:</p>
+          <div class="text-center mb-3">
+            <button type="button" class="btn social-btn"><i class="fab fa-facebook-f"></i></button>
+            <button type="button" class="btn social-btn"><i class="fab fa-twitter"></i></button>
+            <button type="button" class="btn social-btn"><i class="fab fa-google"></i></button>
+          </div>
+
+          <p class="text-center text-muted">Not a member? <a href="#" class="text-primary">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-column">
+    <h2>TravelToor</h2>
+    <p>
+      Explore the world with us! Connect through our social media channels, find quick links to essential resources, and access 24/7 support to make your travel planning effortless.
+    </p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Services</h3>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Instagram</h3>
+    <div class="insta-grid">
+      <img src="/images and video/img82.jpg" alt=""><img src="/images and video/img78.webp" alt="">
+      <img src="/images and video/img77.jpg" alt=""><img src="/images and video/img79.webp" alt="">
+      <img src="/images and video/img80.webp" alt=""><img src="/images and video/img81.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Contact</h3>
+    <p><i class="fas fa-phone-alt"></i> +91 0987654321</p>
+    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+    <p><i class="fas fa-envelope"></i> info@carrental</p>
+  </div>
+</footer>
+<script src="java.js"></script>
+</body>
+</html>

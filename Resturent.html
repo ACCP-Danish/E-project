@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> AMUSEMENT PARK</title>
+  <!-- LINKS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- LINKS JAVA -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+   <div class="roller-coaster">🎢</div>   <a class="navbar-brand" href="#">Amusement Park</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Enterterment.html">Entertainment</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Resturent.html">Restaurant</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tickets.html">Tickets</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="divlog">
+      <button class="btn btn-outline-light ms-2" onclick="openSignInModal()">Sign In</button>
+      <br>
+        <button class="btn btn-outline-light" onclick="openLoginModal()">Login</button>
+        </div>
+    </div>
+  </div>
+</nav>
+
+   
+
+   
+<!-- navbar end -->
+   
+
+  <!-- carousel start -->
+
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
+    data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <!-- First Slide -->
+      <div class="carousel-item active">
+        <img src="/images and video/img45.webp" class="d-block w-100" alt="Roller Coaster">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Thrilling Roller Coaster</h5>
+          <p>Experience the thrill of speed and heights on our fastest roller coaster.</p>
+        </div>
+      </div>
+
+      <!-- Second Slide -->
+      <div class="carousel-item">
+      <img src="/images and video/img46.jpg" class="d-block w-100" alt="Ferris Wheel">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Giant Ferris Wheel</h5>
+          <p>Enjoy panoramic views of the entire park from the top of the Ferris wheel.</p>
+        </div>
+      </div>
+
+      <!-- Third Slide -->
+      <div class="carousel-item">
+      <img src="/images and video/img47.jpg" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Water Splash Ride</h5>
+          <p>Cool down and enjoy the water splash ride, perfect for hot summer days!</p>
+        </div>
+      </div>
+
+      <!-- Fourth Slide -->
+      <div class="carousel-item">
+       <img src="/images and video/img48.jpg" class="d-block w-100" alt="Halloween Event">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Halloween Spooktacular</h5>
+          <p>Get ready for spooky thrills and fun during our Halloween events.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel end -->
+
+  <section class="hero">
+    <h2>Welcome to Delicious Bites</h2>
+  </section>
+
+  <div class="div30">
+
+    <div class="div32">
+      <h2> <img class="img8" src="/images and video/img44.png" alt="">Food Street Merciado</h2>
+      <p>Food streets are vibrant hubs where diverse culinary cultures come alive, offering everything from spicy street snacks to sweet delicacies. These bustling areas attract food lovers seeking authentic, affordable, and freshly prepared meals. Often lined with stalls and small eateries, food streets provide a sensory feast with rich aromas, sizzling sounds, and colorful presentations. They reflect a city’s local flavor and are perfect spots for socializing and experiencing traditional cuisine.</p>
+    </div>
+
+    <div class="div31">
+      <img class="img10" src="/images and video/img43.png" alt="">
+    </div>
+  </div>
+ 
+    <h1 id="h7"> Eat</h1>
+
+  <div class="div35">
+    <div class="div36"><img class="img9" src="/images and video/img50.jpg" alt="">
+      <h2 id="h8">Pizza Max</h2> <button class="hover-button">Details</button>
+    </div>
+    <div class="div36"><img class="img9" src="/images and video/img51.jpg" alt="">
+      <h2 id="h8">Mc Donald's</h2> <button class="hover-button"> Details</button>
+    </div>
+    <div class="div36"><img class="img9" src="/images and video/img52.jpg" alt="">
+      <h2 id="h8">Kfc</h2> <button class="hover-button"> Details</button>
+    </div>
+    <div class="div36"><img class="img9" src="/images and video/img53.jpg" alt="">
+      <h2 id="h8">Nando's</h2> <button class="hover-button"> Details</button>
+    </div>
+    <div class="div36"><img class="img9" src="/images and video/img54.webp" alt="">
+      <h2 id="h8">Subway</h2> <button class="hover-button"> Details</button>
+    </div>
+    <div class="div36"><img class="img9" src="/images and video/img55.jpg" alt="">
+      <h2 id="h8">Pizza Hut</h2> <button class="hover-button"> Details</button>
+    </div>
+  </div>
+
+ <h1 id="h7"> Drink'S</h1>
+
+  <br>
+
+  <div class="div37">
+    <div class="div38"><img class="img9" src="/images and video/img56.webp" alt="">
+      <h2 id="h8">Starbuks Drink's</h2> <button class="hover-button">Details</button>
+    </div>
+    <div class="div38"><img class="img9" src="/images and video/img57.webp" alt="">
+      <h2 id="h8">Mc Donald's Drink's</h2> <button class="hover-button"> Details</button>
+    </div>
+    <div class="div38"><img class="img9" src="/images and video/img58.jpg" alt="">
+      <h2 id="h8">Kfc Drink's</h2> <button class="hover-button"> Details</button>
+    </div>
+    <div class="div38"><img class="img9" src="/images and video/img59.webp" alt="">
+      <h2 id="h8">Nando's</h2> <button class="hover-button"> Details</button>
+    </div>
+    <div class="div38"><img class="img9" src="/images and video/img60.png" alt="">
+      <h2 id="h8">Subway</h2> <button class="hover-button"> Details</button>
+    </div>
+    <div class="div38"><img class="img9" src="/images and video/img61.jpg" alt="">
+      <h2 id="h8">Pizza Hut</h2> <button class="hover-button"> Details</button>
+    </div>
+  </div>
+
+
+
+ <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signInLabel">Sign up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Please fill in this form to create an account.</p>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Full Name*</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email*</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password*</label>
+            <input type="password" class="form-control" placeholder="Enter password">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Repeat Password*</label>
+            <input type="password" class="form-control" placeholder="Repeat Password">
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+          </div>
+
+          <p class="text-sm text-muted">By creating an account you agree to our 
+            <a href="#" class="text-primary text-decoration-none">Terms & Privacy</a>.
+          </p>
+
+          <button type="submit" class="btn btn-primary-gradient w-100 bg-primary">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title mx-auto" id="loginModalLabel">Sign in</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body px-4">
+        <form>
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="Enter email">
+          </div>
+
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input type="password" class="form-control" placeholder="Enter password">
+          </div>
+
+          <div class="text-end mb-3">
+            <a href="#" class="text-decoration-none">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-gradient w-100 mb-3">
+            <i class="fas fa-sign-in-alt me-2"></i>Login
+          </button>
+
+          <p class="text-center text-muted">or sign in with:</p>
+          <div class="text-center mb-3">
+            <button type="button" class="btn social-btn"><i class="fab fa-facebook-f"></i></button>
+            <button type="button" class="btn social-btn"><i class="fab fa-twitter"></i></button>
+            <button type="button" class="btn social-btn"><i class="fab fa-google"></i></button>
+          </div>
+
+          <p class="text-center text-muted">Not a member? <a href="#" class="text-primary">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-column">
+    <h2>TravelToor</h2>
+    <p>
+      Explore the world with us! Connect through our social media channels, find quick links to essential resources, and access 24/7 support to make your travel planning effortless.
+    </p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Services</h3>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Instagram</h3>
+    <div class="insta-grid">
+      <img src="/images and video/img82.jpg" alt=""><img src="/images and video/img78.webp" alt="">
+      <img src="/images and video/img77.jpg" alt=""><img src="/images and video/img79.webp" alt="">
+      <img src="/images and video/img80.webp" alt=""><img src="/images and video/img81.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Contact</h3>
+    <p><i class="fas fa-phone-alt"></i> +91 0987654321</p>
+    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+    <p><i class="fas fa-envelope"></i> info@carrental</p>
+  </div>
+</footer>
+  <script>
+  const detailsData = {
+    "Pizza Max": "Large Pizza - $12<br>Medium Pizza - $9<br>Cheesy Bites - $5",
+    "Mc Donald's": "Big Mac - $6<br>Fries - $2<br>Coke - $1.5",
+    "Kfc": "Zinger Burger - $5<br>Bucket Chicken - $15<br>Pepsi - $1.5",
+    "Nando's": "Peri Peri Chicken - $10<br>Wedges - $4<br>Soft Drink - $2",
+    "Subway": "Footlong Sub - $8<br>6-inch Sub - $5<br>Cookie - $1",
+    "Pizza Hut": "Pan Pizza - $11<br>Wings - $6<br>Drink - $2",
+
+    "Starbuks Drink's": "Latte - $4<br>Frappuccino - $5<br>Espresso - $3",
+    "Mc Donald's Drink's": "McFlurry - $3<br>Smoothie - $2.5<br>Iced Coffee - $2",
+    "Kfc Drink's": "Lemonade - $2<br>Pepsi - $1.5<br>Milkshake - $3",
+    "Nando's Drink's": "Sparkling Water - $2<br>Lemonade - $2.5<br>Passionfruit Juice - $3",
+    "Subway Drink's": "Coca-Cola - $1.5<br>Orange Juice - $2<br>Iced Tea - $2",
+    "Pizza Hut Drink's": "Pepsi - $1.5<br>Root Beer - $2<br>Ice Lemon Tea - $2.5"
+  };
+
+  document.querySelectorAll(".hover-button").forEach(button => {
+    button.addEventListener("click", function () {
+      const parentDiv = button.parentElement;
+
+      // Remove existing detail div if present
+      const existing = parentDiv.querySelector(".mini-details");
+      if (existing) {
+        existing.remove();
+        return;
+      }
+
+      // Remove all others
+      document.querySelectorAll(".mini-details").forEach(el => el.remove());
+
+      // Get restaurant name from the h2 tag
+      const name = parentDiv.querySelector("h2").innerText;
+
+      // Create new detail div
+      const miniDiv = document.createElement("div");
+      miniDiv.className = "mini-details";
+      miniDiv.style.background = "#fff";
+      miniDiv.style.padding = "10px";
+      miniDiv.style.border = "1px solid #ccc";
+      miniDiv.style.marginTop = "10px";
+      miniDiv.style.boxShadow = "0 2px 8px rgba(0,0,0,0.1)";
+      miniDiv.innerHTML = `
+        <strong>Menu:</strong><br>
+        ${detailsData[name] || "Details not available."}
+      `;
+
+      parentDiv.appendChild(miniDiv);
+    });
+  });
+</script> 
+<script src="java.js"></script>
+</body>
+</html>

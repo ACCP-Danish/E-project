@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- LINKS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- LINKS JAVA -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <div class="roller-coaster">🎢</div>  <a class="navbar-brand" href="#">Amusement Park</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Enterterment.html">Entertainment</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Resturent.html">Restaurant</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tickets.html">Tickets</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="divlog">
+      <button class="btn btn-outline-light ms-2" onclick="openSignInModal()">Sign In</button>
+      <br>
+        <button class="btn btn-outline-light" onclick="openLoginModal()">Login</button>
+        </div>
+    </div>
+  </div>
+</nav>
+
+   
+
+   
+<!-- navbar end -->
+
+
+
+    <!-- carousel start -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
+        data-bs-interval="3000">
+        <div class="carousel-inner">
+
+            <!-- First Slide -->
+            <div class="carousel-item active">
+             <img src="/images and video/img81.jpg" class="d-block w-100" alt="Roller Coaster">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Water slide</h5>
+                    <p>Experience the thrill of speed and heights on our fastest water slide.</p>
+                </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+        
+                 <img src="/images and video/img2.jpg" class="d-block w-100" alt="Ferris Wheel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Thrilling Roller Coaster</h5>
+                    <p>Enjoy panoramic views of the entire park from the top of the Thrilling Roller Coaster.</p>
+                </div>
+            </div>
+
+            <!-- Third Slide -->
+            <div class="carousel-item">
+           <img src="/images and video/image1.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Water Splash Ride</h5>
+                    <p>Cool down and enjoy the water splash ride, perfect for hot summer days!</p>
+                </div>
+            </div>
+
+            <!-- Fourth Slide -->
+            <div class="carousel-item">
+           <img src="/images and video/img83.jpg" class="d-block w-100" alt="Halloween Event">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cool pool swiming pool</h5>
+                    <p>Get ready for spooky thrills and fun during our slide events.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel end -->
+
+
+    <div class="div16">
+        <div class="div17">
+            <h1>Gallery</h1>
+        </div>
+    </div>
+    <div class="div18">
+        <h2>Amusement Park Explorer: Your Adventure Starts Here!</h2>
+         </div>
+        <div class="div21">
+        <h2>A Restaurant and Amusement Park Experience</h2>
+   </div>
+
+    <div class="div19">
+        <div class="div20" id="div1"><img src="/images and video/img14.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div2"><img src="images and video/img15.webp" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div3"><img src="/images and video/img16.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div4"><img src="/images and video/img17.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div5"><img src="/images and video/img18.avif" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div6"><img src="/images and video/img19.png" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div7"><img src="/images and video/img20.webp" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div8"><img src="/images and video/img21.webp" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div9"><img src="/images and video/img22.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div10"><img src="/images and video/img23.webp" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+<div class="div20" id="div11"><img src="/images and video/img24.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div12"><img src="/images and video/img26.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div13"><img src="/images and video/img25.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div14"><img src="/images and video/img27.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div15"><img src="/images and video/img28.avif" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div16"><img src="/images and video/img30.avif" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div17"><img src="/images and video/img29.webp" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div18"><img src="/images and video/img31.jpg" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div19"><img src="/images and video/img33.webp" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+        <div class="div20" id="div20"><img src="/images and video/img32.webp" class="thumb" alt="Image 1">
+    <div class="hover-icon">&#128269;</div></div>
+    </div>
+
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox hidden">
+  <img id="lightbox-img" src="" alt="Zoomed">
+  <div class="controls">
+    <button id="prevBtn">⏴</button>
+    <span id="imageNumber">1 / 3</span>
+    <button id="nextBtn">⏵</button>
+    <button id="closeBtn"> ✖</button>
+  </div>
+</div>
+    
+
+
+
+ <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signInLabel">Sign up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">Please fill in this form to create an account.</p>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Full Name*</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email*</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password*</label>
+            <input type="password" class="form-control" placeholder="Enter password">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Repeat Password*</label>
+            <input type="password" class="form-control" placeholder="Repeat Password">
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+          </div>
+
+          <p class="text-sm text-muted">By creating an account you agree to our 
+            <a href="#" class="text-primary text-decoration-none">Terms & Privacy</a>.
+          </p>
+
+          <button type="submit" class="btn btn-primary-gradient w-100 bg-primary">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title mx-auto" id="loginModalLabel">Sign in</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body px-4">
+        <form>
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="Enter email">
+          </div>
+
+          <div class="mb-3 input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input type="password" class="form-control" placeholder="Enter password">
+          </div>
+
+          <div class="text-end mb-3">
+            <a href="#" class="text-decoration-none">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-gradient w-100 mb-3">
+            <i class="fas fa-sign-in-alt me-2"></i>Login
+          </button>
+
+          <p class="text-center text-muted">or sign in with:</p>
+          <div class="text-center mb-3">
+            <button type="button" class="btn social-btn"><i class="fab fa-facebook-f"></i></button>
+            <button type="button" class="btn social-btn"><i class="fab fa-twitter"></i></button>
+            <button type="button" class="btn social-btn"><i class="fab fa-google"></i></button>
+          </div>
+
+          <p class="text-center text-muted">Not a member? <a href="#" class="text-primary">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+    <footer class="footer">
+  <div class="footer-column">
+    <h2>Amusement park </h2>
+    <p>
+      Explore the amusement park with us! Connect through our social media channels, find quick links to essential resources, and access 24/7 support to make your travel planning effortless.
+    </p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Services</h3>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </div>
+
+   <div class="footer-column">
+    <h3>Instagram</h3>
+    <div class="insta-grid">
+      <img src="/images and video/img82.jpg" alt=""><img src="/images and video/img78.webp" alt="">
+      <img src="/images and video/img77.jpg" alt=""><img src="/images and video/img79.webp" alt="">
+      <img src="/images and video/img80.webp" alt=""><img src="/images and video/img81.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h3>Contact</h3>
+    <p><i class="fas fa-phone-alt"></i> +91 0987654321</p>
+    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+    <p><i class="fas fa-envelope"></i> info@carrental</p>
+  </div>
+</footer>
+
+   
+ 
+<script src="java.js"></script>
+</body>
+
+</html>

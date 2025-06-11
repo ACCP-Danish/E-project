@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AMUSEMENT PARK</title>
+    <!-- LINKS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- LINKS JAVA -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="tickets.css">
+</head>
+<body>
+
+    
+<div class="form-container">
+  <h2><span>Personal</span> Information</h2>
+  <form id="infoForm">
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+    <input type="text" placeholder="Full Address" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <input type="password" placeholder="Confirm Password" required>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" required>
+    <div class="form-footer">
+      <label>
+        <input type="checkbox" required>
+        Agree to <a href="#">Park Policies</a>
+      </label>
+      <button type="button" class="btn" onclick="validateForm()">Next &gt;&gt;</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  function validateForm() {
+    // You can add actual form validation here
+    alert("Please fillup the form");
+  }
+</script>
+
+</body>
+</html>

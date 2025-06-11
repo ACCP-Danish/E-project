@@ -1,0 +1,267 @@
+    /* navbar css start */
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .navbar-brand {
+      color: #ffc107;
+      font-weight: bold;
+      font-size: 1.8rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-brand:hover {
+      color: black;
+    }
+
+    .nav-link {
+      color: white;
+      font-weight: 500;
+      padding: 8px 15px;
+      transition: all 0.4s ease;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffc107;
+      transition: width 0.4s ease;
+    }
+
+    .nav-link:hover {
+      color: #ffc107;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    @media (max-width: 767.98px) {
+      .navbar-nav {
+        text-align: center;
+      }
+    }
+ 
+/* navbar css end */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(to right, #ff9900, #ff3300);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.8em;
+    }
+
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: #ff3300;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 1.1em;
+    }
+
+    
+
+.banner {
+      background: linear-gradient(to right, #ff6600, #ff9900);
+      padding: 50px 0;
+      text-align: center;
+      font-size: 32px;
+      color: white;
+      font-style: italic;
+    }
+
+    .containere {
+      padding: 30px;
+      background-color: #f5f5f5;
+    }
+
+    .containere h2 {
+      color: #a21d2a;
+    }
+
+    .faq {
+      margin-top: 30px;
+    }
+
+    .faq h3 {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .faq p {
+      margin-left: 20px;
+    }
+
+    .policies {
+      margin-top: 40px;
+    }
+
+    .policies h3 {
+      color: #a21d2a;
+      margin-top: 20px;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      border: none;
+    }
+    .btn-gradient:hover {
+      background: linear-gradient(to right, #16325c, #1d3f73);
+    }
+    .input-group-text {
+      background-color: transparent;
+      border: none;
+      font-size: 1.2rem;
+      color: #1e3c72;
+    }
+    .social-btn {
+      border-radius: 50%;
+      padding: 0.5rem 0.7rem;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 0 5px;
+    }
+    .modal-content {
+      border-radius: 1rem;
+    }
+   .divlog{
+    display: flex;
+    gap: 10px;
+   }
+   .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #f15a29;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer h2, .footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer p, .footer li, .footer a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 8px;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 70px);
+  gap: 10px;
+}
+
+.insta-grid img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.insta-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+  background: #fff2;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #fff;
+  color: #f15a29;
+  transform: scale(1.2);
+}
+
+.footer-column p i {
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .insta-grid {
+    justify-content: center;
+  }
+
+  .footer-column {
+    margin: 10px auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
